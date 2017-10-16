@@ -10,7 +10,7 @@ The web service exposes two endpoints:
 	
 In the background, the endpoints use embedded MongoDB to store the data. All of the data is stored through a CRUD repository (a feature of Spring) which allows specification of custom queries using keywords predefined in Spring Data (more information can be found [here]( https://docs.spring.io/spring-data/jpa/docs/1.4.3.RELEASE/reference/html/repository-query-keywords.html)) after which Spring creates the specific queries in the background (in this case specificly for MongoDB).
 
-The easiest way to run the service is by using the packaged jar file and invoking
+The easiest way to run the service is by packaging a jar file using maven and invoking
 java -jar mongodb-springboot-restservice-0.0.1.jar
 this will run a new Spring Boot application which uses an embedded Tomcat server to execute the service and expose the endpoints to port 8080 on the localhost address (127.0.0.1).
 
