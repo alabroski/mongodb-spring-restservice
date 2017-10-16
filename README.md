@@ -17,13 +17,13 @@ this will run a new Spring Boot application which uses an embedded Tomcat server
 The way to invoke the endpoints would be to use curl for UNIX systems and a browser extension for Windows such as [Advanced REST client for Google Chrome](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
 Here are a couple of examples using curl:
 
-ADDITION OF NEW MOVIES
+#### Addition of new movies
 ```
 curl -d 'movieName=Batman Begins&movieDescription=Sample description&year=2005' -H "Accept: application/json" -X POST http://localhost:8080/addMovie
 curl -d 'movieName=The Big Short&movieDescription=Economic crysis&year=2015' -H "Accept: application/json" -X POST http://localhost:8080/addMovie
 ```
 
-MOVIE SEARCH
+#### Movie search
 ```
 curl -d 'year=2011' -H "Accept: application/json" -X POST http://localhost:8080/movieSearch
 curl -d 'movieName=the game' -H "Accept: application/json" -X POST http://localhost:8080/movieSearch
